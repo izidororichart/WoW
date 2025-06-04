@@ -192,7 +192,7 @@ function switchExpansion()
     logo.style.background = `url(${logoPath}/${expName}.png)`;
     version.textContent = verMap[expansion];
     date.textContent = dateMap[expansion];
-    copyright.textContent = `Copyright 2004-${copyMap[expansion]} Blizzard Entertainment. All Right Reserved.`;
+    copyright.textContent = `Copyright 2004-${copyMap[expansion]} Blizzard Entertainment. Todos os Direitos Reservados.`;
     setButtonColors(buttonColorMap[expansion]);
     
     bg.load();
