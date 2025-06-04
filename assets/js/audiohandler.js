@@ -1,8 +1,8 @@
-var expansion = 8;
+var expansion = 0;
 
 var expansionMap = [
     'Vanilla',
-    'BurningCrusade',
+    'TheBurningCrusade',
     'WrathOfTheLichKing',
     'Cataclysm',
     'MistsOfPandaria',
@@ -10,6 +10,8 @@ var expansionMap = [
     'Legion',
     'BattleForAzeroth',
     'Shadowlands',
+    'Dragonflight',
+    'TheWarWithin',
 ]
 
 var audioPath = './assets/audio';
@@ -17,33 +19,39 @@ var videoPath = './assets/img/bg';
 var logoPath = './assets/img/ui/logos';
 
 var verMap = [
-    'Version 1.12.1 (5875) (Release)',
-    'Version 2.4.3 (8606) (Release)',
-    'Version 3.3.5 (12340) (Release)',
-    'Version 4.3.4 (15595) (Release x86)',
-    'Version 5.4.8 (18414) (Release x86)',
-    'Version 6.2.0 (20173) (Release x64)',
-    'Version 7.3.5 (26365) (Release x64)',
-    'Version 8.3.7 (35662) (Release x64)',
-    'Version 9.0.1 (35944) (Release x64)'
+    'Versão 1.12.1 (5875) (Versão Final)',
+    'Versão 2.4.3 (8606) (Versão Final)',
+    'Versão 3.3.5 (12340) (Versão Final)',
+    'Versão 4.3.4 (15595) (Versão Final x86)',
+    'Versão 5.4.8 (18414) (Versão Final x86)',
+    'Versão 6.2.0 (20173) (Versão Final x64)',
+    'Versão 7.3.5 (26365) (Versão Final x64)',
+    'Versão 8.3.7 (35662) (Versão Final x64)',
+    'Versão 9.0.1 (35944) (Versão Final x64)',
+    'Versão 10.0.2 (46658) (Versão Final x64)',
+    'Versão 11.0.2
 ];
 
 var dateMap = [
-    'Sept 19 2006',
+    'Set 19 2006',
     'Jul 10 2008',
     'Jun 24 2010',
-    'Feb 9 2011',
+    'Fev 9 2011',
     'Jun 13 2014',
     'Jun 20 2015',
-    'Apr 3 2018',
-    'Aug 24 2020',
-    'Oct 13 2020'
+    'Abr 3 2018',
+    'Ago 24 2020',
+    'Out 13 2020',
+    'Nov 28 2022',
+    'Ago 26 2024'
 ];
 
 var buttonColorMap = [
     0,
     0,
     1,
+    0,
+    0,
     0,
     0,
     0,
@@ -61,7 +69,9 @@ var copyMap = [
     2015,
     2018,
     2020,
-    2020
+    2020,
+    2022,
+    2024
 ];
 
 var cursor;
@@ -146,7 +156,7 @@ function manualChangeExpac()
 {
     console.log("Changing xpac to: ");
     expansion += 1;
-    if(expansion > 8)
+    if(expansion > 11)
         expansion = 0;
     
     var bg = document.getElementById('background');
