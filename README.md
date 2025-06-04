@@ -1,2 +1,2 @@
-# WoWLoginScreens
-[Recreations of the World of Warcraft login screens for every expansion.](https://xiexe.github.io/WoWLoginScreens/)
+# WoW
+[Apenas um teste.](https://izidororichart.github.io/WoW/)
