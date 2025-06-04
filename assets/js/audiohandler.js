@@ -1,4 +1,4 @@
-var expansion = 10;
+var expansion = 0;
 
 var expansionMap = [
     'Vanilla',
