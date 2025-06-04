@@ -175,7 +175,6 @@ function switchExpansion()
     queuePos = null;
     getPositionInQueue();
     var bg = document.getElementById('background');
-    var bgWebM = bg.querySelector('source:nth-child(1)');
     var bgMp4 = bg.querySelector('source:nth-child(2)');
     var logo = document.getElementById('logo');
     var version = document.getElementById('buildVersion');
@@ -187,7 +186,6 @@ function switchExpansion()
     var expName = expansionMap[expansion];
     console.log(expName);
     audio.src = `${audioPath}/${expName}.ogg`;
-    bgWebM.setAttribute('src', `${videoPath}/${expName}.webm`);
     bgMp4.setAttribute('src', `${videoPath}/${expName}.mp4`)
     logo.style.background = `url(${logoPath}/${expName}.png)`;
     version.textContent = verMap[expansion];
