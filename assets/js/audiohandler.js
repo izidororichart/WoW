@@ -1,4 +1,4 @@
-var expansion = 0;
+var expansion = 10;
 
 var expansionMap = [
     'Vanilla',
@@ -175,7 +175,7 @@ function switchExpansion()
     queuePos = null;
     getPositionInQueue();
     var bg = document.getElementById('background');
-    var bgMp4 = bg.querySelector('source:nth-child(2)');
+    var bgMp4 = bg.querySelector('source:nth-child(1)');
     var logo = document.getElementById('logo');
     var version = document.getElementById('buildVersion');
     var date = document.getElementById('buildDate');
