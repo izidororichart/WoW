@@ -11,7 +11,7 @@ var expansionMap = [
     'BattleForAzeroth',
     'Shadowlands',
     'Dragonflight',
-    'TheWarWithin',
+    'WarWithin',
 ]
 
 var audioPath = './assets/audio';
@@ -29,7 +29,7 @@ var verMap = [
     'Versão 8.3.7 (35662) (Versão Final x64)',
     'Versão 9.0.1 (35944) (Versão Final x64)',
     'Versão 10.0.2 (46658) (Versão Final x64)',
-    'Versão 11.0.2
+    'Versão 11.0.2'
 ];
 
 var dateMap = [
